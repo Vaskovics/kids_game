@@ -1,20 +1,46 @@
-import React from 'react'
-import './nav.scss';
+import { 
+  AppBar, 
+  Toolbar, 
+  Stack,
+  Typography, Button,
+} from '@mui/material';
+// import './nav.scss';
 
 const navArr = ['Алфавіт', 'Звірі', 'Казки', 'Скоромовки'];
 
 export const Nav = () => {
   return (
-    <div className="nav">
-      <ul className="nav__list">
-        {navArr.map(item => (
-          <li>
-            <a className="nav__item" href="#alphabeth">{item}</a>
-          </li>
-        ))}
+    <AppBar position='static'>
+      <Toolbar>
+        <Stack 
+          direction='row' 
+          spacing={3}
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            width: '100%',
+          }}
+        >
+          <Button variant="text" color="inherit">
+            Алфавіт
+          </Button>
 
-      </ul>
-    </div>
+          <Button variant="text" color="inherit">
+            Тварин
+          </Button>
+
+          <Button variant="text" color="inherit">
+            Скоромовки
+          </Button>
+
+          <Button variant="text" color="inherit">
+            Казки
+          </Button>
+
+        </Stack>
+
+      </Toolbar>
+    </AppBar>
   )
 }
 
