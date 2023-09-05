@@ -1,0 +1,29 @@
+
+.content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+} 
+
+.content img {
+  max-height: 700px;
+}
+
+.container {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+

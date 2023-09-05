@@ -2,13 +2,17 @@ import {
   AppBar, 
   Toolbar, 
   Stack,
-  Typography, Button,
+  Button,
 } from '@mui/material';
-// import './nav.scss';
+import { Game } from '../../types/game';
 
-const navArr = ['Алфавіт', 'Звірі', 'Казки', 'Скоромовки'];
+type Props = {
+  setChoosenGame: (game: Game) => void,
+}
 
-export const Nav = () => {
+export const Nav: React.FC<Props> = ({
+  setChoosenGame 
+}) => {
   return (
     <AppBar position='static'>
       <Toolbar>
@@ -21,11 +25,19 @@ export const Nav = () => {
             width: '100%',
           }}
         >
-          <Button variant="text" color="inherit">
+          <Button 
+            variant="text" 
+            color="inherit"
+            onClick={() => setChoosenGame('alphabet')}
+          >
             Алфавіт
           </Button>
 
-          <Button variant="text" color="inherit">
+          <Button 
+            variant="text" 
+            color="inherit"
+            onClick={() => setChoosenGame('animals')}
+          >
             Тварин
           </Button>
 
