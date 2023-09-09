@@ -8,14 +8,14 @@ import { Letter } from './types/Letter';
 import { getRandomIndex } from './utils/helpers';
 import { lettersImg } from './data/lettersImg';
 import { Game } from './types/game';
-import { hello } from './data/hello';
+import { helloObj } from './data/hello';
 import { animalsImg } from './data/animalsImg';
 
 
 function App() {
   const [choosenGame, setChoosenGame] = useState<Game | null>(null);
   const [cards, setCards] = useState<Letter[]>([]);
-  const [selectedLetter, setSelectedLetter] = useState<Letter | null>(hello);
+  const [selectedLetter, setSelectedLetter] = useState<Letter | null>(helloObj);
   const [prevLetter, setPrevLetter] = useState<Letter | null>(null);
 
 

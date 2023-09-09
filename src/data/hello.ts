@@ -1,4 +1,5 @@
-export const hello = {
+
+export const helloObj = {
   name: 'hello',
-  src: './images/hello.jpeg',
+  src: '/images/1.jpeg'
 }
