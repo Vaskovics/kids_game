@@ -3,7 +3,7 @@ import { Box, Stack } from '@mui/material';
 import { Nav } from './components/nav/nav';
 import './App.scss';
 import './utils/reset.scss';
-import CardList from './components/card/Card';
+import Card from './components/card/Card';
 import { CardType } from './types/CardType';
 import { getRandomIndex } from './utils/helpers';
 import { lettersImg } from './data/lettersImg';
@@ -19,6 +19,7 @@ function App() {
   const [homeCard, setHomeCard] = useState<CardType | null>(helloObj);
   const [prevLetter, setPrevLetter] = useState<CardType | null>(null);
 
+  console.log(homeCard);
 
   const handleNextLetter = () => {
     const randomIndex = getRandomIndex(cards);
@@ -48,12 +49,25 @@ function App() {
 
   return (
       <Box className='container'>
-        <CardList
-          selectedCard={selectedLetter}
-          onNextLetter={handleNextLetter}
-          onPrevLetter={handlePrevLetter}
-          homeCard={homeCard}
+
+        {homeCard ? (
+          <Card
+            selectedCard={homeCard}
+            onNextLetter={handleNextLetter}
+            onPrevLetter={handlePrevLetter}
+            homeCard={homeCard}
         />
+        ) : (
+          <Card
+            selectedCard={selectedLetter}
+            onNextLetter={handleNextLetter}
+            onPrevLetter={handlePrevLetter}
+            homeCard={homeCard}
+          />
+        )}
+
+
+
         <Stack className="bottomNav">
           <Nav
             setChoosenGame={setChoosenGame}
