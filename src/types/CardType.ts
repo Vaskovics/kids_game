@@ -1,4 +1,4 @@
-export type Letter = {
+export type CardType = {
   name: string,
   src: string,
 }

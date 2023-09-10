@@ -4,7 +4,7 @@ import { Nav } from './components/nav/nav';
 import './App.scss';
 import './utils/reset.scss';
 import CardList from './components/card/Card';
-import { Letter } from './types/Letter';
+import { CardType } from './types/CardType';
 import { getRandomIndex } from './utils/helpers';
 import { lettersImg } from './data/lettersImg';
 import { Game } from './types/game';
@@ -14,9 +14,10 @@ import { animalsImg } from './data/animalsImg';
 
 function App() {
   const [choosenGame, setChoosenGame] = useState<Game | null>(null);
-  const [cards, setCards] = useState<Letter[]>([]);
-  const [selectedLetter, setSelectedLetter] = useState<Letter | null>(helloObj);
-  const [prevLetter, setPrevLetter] = useState<Letter | null>(null);
+  const [cards, setCards] = useState<CardType[]>([]);
+  const [selectedLetter, setSelectedLetter] = useState<CardType | null>(null);
+  const [homeCard, setHomeCard] = useState<CardType | null>(helloObj);
+  const [prevLetter, setPrevLetter] = useState<CardType | null>(null);
 
 
   const handleNextLetter = () => {
@@ -41,6 +42,8 @@ function App() {
       setCards(animalsImg);
     }
 
+    setHomeCard(null);
+
   }, [choosenGame]);
 
   return (
@@ -49,6 +52,7 @@ function App() {
           selectedCard={selectedLetter}
           onNextLetter={handleNextLetter}
           onPrevLetter={handlePrevLetter}
+          homeCard={homeCard}
         />
         <Stack className="bottomNav">
           <Nav

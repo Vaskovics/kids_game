@@ -7,7 +7,7 @@ export const animalsImg = [
   {name: 'Panda', src: 'https://www.royalcopenhagen.com/-/media/products/2021/12/27/00/44/resource_royalcopenhagenemea_1062304.jpg?q=100&iw=1288&ih=1288&crop=1' },
   {name: 'Rebbit', src: 'https://i.pinimg.com/564x/3a/14/a8/3a14a8bb28b385480e82cdab6beb8665.jpg' },
   {name: 'Zebra', src: 'https://i.pinimg.com/564x/40/42/b6/4042b6a63475001206a522a07fa4d9a0.jpg' },
-  {name: 'Mouse', src: 'https://i.pinimg.com/564x/69/5b/db/695bdbd700c6cee1fec86439c100014b.jpg' },
+  {name: 'Mouse', src: 'https://i.pinimg.com/564x/c7/16/87/c71687a35fc0ecc13226d1ca3212da50.jpg' },
   {name: 'Cow', src: 'https://i.pinimg.com/564x/9c/67/9d/9c679d7b656cff40aedb9eff6d2aa9ee.jpg' },
   {name: 'Kenguru', src: 'https://i.pinimg.com/564x/a9/ff/3b/a9ff3b491d05d3d2ec4279282a18c7a3.jpg' },
   {name: 'Goat', src: 'https://i.pinimg.com/564x/98/58/6e/98586e08e451167611460e969c1c17ab.jpg' },
@@ -20,6 +20,6 @@ export const animalsImg = [
   {name: 'Delphin', src: 'https://i.pinimg.com/564x/cb/dc/4e/cbdc4eba1da3cf04e82ea577f78b0ca6.jpg' },
   {name: 'Lion', src: 'https://i.pinimg.com/564x/7b/78/7b/7b787bdb2320610d26466054678c0ea8.jpg' },
   {name: 'Tiger', src: 'https://i.pinimg.com/564x/78/85/9a/78859a54f029c4f214016e69e68c3fa7.jpg' },
-  {name: 'Khinoceros', src: 'https://i.pinimg.com/564x/df/3a/7d/df3a7da0f8edea4692afe7c9f0df007a.jpg' },
+  {name: 'Rhino', src: 'https://i.pinimg.com/564x/df/3a/7d/df3a7da0f8edea4692afe7c9f0df007a.jpg' },
   {name: 'Hippo', src: 'https://i.pinimg.com/564x/f5/02/7b/f5027bd076793f941988d0d59dfac108.jpg' },
 ];

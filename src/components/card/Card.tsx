@@ -1,23 +1,26 @@
 import React from 'react';
-import { Letter } from '../../types/Letter';
+import { CardType } from '../../types/CardType';
 import { Stack, Button } from '@mui/material';
 
 type Props = {
-  selectedCard: Letter | null,
+  selectedCard: CardType | null,
   onNextLetter: () => void,
   onPrevLetter: () => void,
+  homeCard: CardType | null,
 }
 
 const CardList: React.FC<Props> = ({
   selectedCard: selectedLetter,
   onNextLetter,
   onPrevLetter,
+  homeCard
 }) => {
   console.log(selectedLetter)
   return (
     <div className='content'>
-      <figure>
+      <figure className='content__figure'>
         <img
+          className='content__image'
           title="PDF Viewer"
           width="100%"
           src={selectedLetter?.src}
@@ -29,7 +32,9 @@ const CardList: React.FC<Props> = ({
         )}
       </figure>
       
-      <Stack 
+
+      {homeCard && (
+        <Stack 
         direction='row'
         spacing={2}
         className="bottom"
@@ -48,6 +53,7 @@ const CardList: React.FC<Props> = ({
         </Button>
 
       </Stack>
+      )}
     </div>
   )
 }

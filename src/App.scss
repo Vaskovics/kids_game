@@ -12,18 +12,30 @@
     font-weight: bold;
     font-size: 70px;
     text-transform: uppercase;
+
+  }
+
+  &__figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    border-radius: 10%;
   }
 } 
 
 .content img {
-  max-height: 700px;
+  max-height: 650px;
 }
 
 .container {
   height: 100vh;
+  max-width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
