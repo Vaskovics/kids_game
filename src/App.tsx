@@ -15,7 +15,7 @@ import { animalsImg } from './data/animalsImg';
 function App() {
   const [choosenGame, setChoosenGame] = useState<Game | null>(null);
   const [cards, setCards] = useState<CardType[]>([]);
-  const [selectedLetter, setSelectedLetter] = useState<CardType | null>(null);
+  const [selectedCard, setSelectedCard] = useState<CardType | null>(null);
   const [homeCard, setHomeCard] = useState<CardType | null>(helloObj);
   const [prevLetter, setPrevLetter] = useState<CardType | null>(null);
 
@@ -23,24 +23,24 @@ function App() {
 
   const handleNextLetter = () => {
     const randomIndex = getRandomIndex(cards);
-    setPrevLetter(selectedLetter);
-    setSelectedLetter(cards[randomIndex]);
+    setPrevLetter(selectedCard);
+    setSelectedCard(cards[randomIndex]);
   }
 
   const handlePrevLetter = () => {
-    setSelectedLetter(prevLetter);
+    setSelectedCard(prevLetter);
   }
 
   useEffect(() => {
 
     if (choosenGame === 'alphabet') {
-      setSelectedLetter(lettersImg[0]);
+      setSelectedCard(lettersImg[0]);
       setCards(lettersImg);
       setHomeCard(null);
     }
 
     if (choosenGame === 'animals') {
-      setSelectedLetter(animalsImg[0]);
+      setSelectedCard(animalsImg[0]);
       setCards(animalsImg);
       setHomeCard(null);
     }
@@ -52,18 +52,18 @@ function App() {
 
         {homeCard ? (
           <Card
-            selectedCard={homeCard}
+          selectedCard={homeCard}
+          onNextLetter={handleNextLetter}
+          onPrevLetter={handlePrevLetter}
+          homeCard={homeCard}
+        />
+        ) : (
+          <Card
+            selectedCard={selectedCard}
             onNextLetter={handleNextLetter}
             onPrevLetter={handlePrevLetter}
             homeCard={homeCard}
         />
-        ) : (
-          <Card
-            selectedCard={selectedLetter}
-            onNextLetter={handleNextLetter}
-            onPrevLetter={handlePrevLetter}
-            homeCard={homeCard}
-          />
         )}
 
 

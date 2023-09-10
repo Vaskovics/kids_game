@@ -2,7 +2,7 @@ export const animalsImg = [
   {name: 'Cat', src: 'https://i.pinimg.com/564x/fd/fb/e5/fdfbe5777327dc6a57650004518edae4.jpg' },
   {name: 'Dog', src: 'https://i.pinimg.com/564x/49/10/0b/49100bebbacde629c1effdbce04b9cac.jpg' },
   {name: 'Elefant', src: 'https://i.pinimg.com/564x/d1/45/93/d14593e91639ece3882fa6378de08c58.jpg' },
-  {name: 'Giraffe', src: 'https://i.pinimg.com/564x/fd/63/e8/fd63e805e89709958dbdfd1f03b5b9b2.jpg' },
+  {name: 'Giraffe', src: 'https://i.pinimg.com/564x/79/eb/63/79eb63583b83b9fc1c6da3b18697fe8b.jpg' },
   {name: 'Monkey', src: 'https://i.pinimg.com/564x/b8/13/28/b813282700dfb123d6c6c379a61e5d00.jpg' },
   {name: 'Panda', src: 'https://www.royalcopenhagen.com/-/media/products/2021/12/27/00/44/resource_royalcopenhagenemea_1062304.jpg?q=100&iw=1288&ih=1288&crop=1' },
   {name: 'Rebbit', src: 'https://i.pinimg.com/564x/3a/14/a8/3a14a8bb28b385480e82cdab6beb8665.jpg' },
@@ -22,4 +22,8 @@ export const animalsImg = [
   {name: 'Tiger', src: 'https://i.pinimg.com/564x/78/85/9a/78859a54f029c4f214016e69e68c3fa7.jpg' },
   {name: 'Rhino', src: 'https://i.pinimg.com/564x/df/3a/7d/df3a7da0f8edea4692afe7c9f0df007a.jpg' },
   {name: 'Hippo', src: 'https://i.pinimg.com/564x/f5/02/7b/f5027bd076793f941988d0d59dfac108.jpg' },
+  {name: 'Alogator', src: 'https://i.pinimg.com/564x/8e/4d/82/8e4d82bdf2f82f9378a9217f79cb03b5.jpg' },
+  {name: 'Ant', src: 'https://i.pinimg.com/564x/af/d3/86/afd38622ef03036bba764d18951f6932.jpg' },
+  {name: 'parrot', src: 'https://i.pinimg.com/564x/72/c1/e4/72c1e4b2abfdc743ae7948e51515d7e2.jpg' },
+
 ];
