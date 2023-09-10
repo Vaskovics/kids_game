@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kids_game/static/css/main.154646ec.css",
-    "main.js": "/kids_game/static/js/main.67e69022.js",
+    "main.js": "/kids_game/static/js/main.d846451f.js",
     "index.html": "/kids_game/index.html",
     "main.154646ec.css.map": "/kids_game/static/css/main.154646ec.css.map",
-    "main.67e69022.js.map": "/kids_game/static/js/main.67e69022.js.map"
+    "main.d846451f.js.map": "/kids_game/static/js/main.d846451f.js.map"
   },
   "entrypoints": [
     "static/css/main.154646ec.css",
-    "static/js/main.67e69022.js"
+    "static/js/main.d846451f.js"
   ]
 }
