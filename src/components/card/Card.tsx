@@ -15,7 +15,7 @@ const CardList: React.FC<Props> = ({
   onPrevLetter,
   homeCard
 }) => {
-  console.log(selectedLetter)
+  console.log(homeCard)
   return (
     <div className='content'>
       <figure className='content__figure'>
@@ -33,7 +33,7 @@ const CardList: React.FC<Props> = ({
       </figure>
       
 
-      {homeCard && (
+      {homeCard ? null : (
         <Stack 
         direction='row'
         spacing={2}

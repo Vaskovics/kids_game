@@ -35,14 +35,14 @@ function App() {
     if (choosenGame === 'alphabet') {
       setSelectedLetter(lettersImg[0]);
       setCards(lettersImg);
+      setHomeCard(null);
     }
 
     if (choosenGame === 'animals') {
       setSelectedLetter(animalsImg[0]);
       setCards(animalsImg);
+      setHomeCard(null);
     }
-
-    setHomeCard(null);
 
   }, [choosenGame]);
 
