@@ -5,7 +5,6 @@ import './App.scss';
 import './utils/reset.scss';
 import Card from './components/card/Card';
 import { CardType } from './types/CardType';
-import { getRandomIndex } from './utils/helpers';
 import { lettersImg } from './data/lettersImg';
 import { Game } from './types/game';
 import { helloObj } from './data/hello';
@@ -18,13 +17,22 @@ function App() {
   const [selectedCard, setSelectedCard] = useState<CardType | null>(null);
   const [homeCard, setHomeCard] = useState<CardType | null>(helloObj);
   const [prevLetter, setPrevLetter] = useState<CardType | null>(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(1);
 
-  console.log(homeCard);
+  console.log(currentIndex, selectedCard);
 
   const handleNextLetter = () => {
-    const randomIndex = getRandomIndex(cards);
     setPrevLetter(selectedCard);
-    setSelectedCard(cards[randomIndex]);
+
+    
+    setCurrentIndex(currentInx => {
+      if (currentIndex === cards.length) {
+        setCurrentIndex(0);
+    }
+      return currentInx + 1;
+    });
+
+    setSelectedCard(cards[currentIndex]);
   }
 
   const handlePrevLetter = () => {
@@ -37,12 +45,14 @@ function App() {
       setSelectedCard(lettersImg[0]);
       setCards(lettersImg);
       setHomeCard(null);
+      setCurrentIndex(0);
     }
 
     if (choosenGame === 'animals') {
       setSelectedCard(animalsImg[0]);
       setCards(animalsImg);
       setHomeCard(null);
+      setCurrentIndex(0);
     }
 
   }, [choosenGame]);

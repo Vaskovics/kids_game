@@ -15,7 +15,6 @@ const CardList: React.FC<Props> = ({
   onPrevLetter,
   homeCard
 }) => {
-  console.log(homeCard)
   return (
     <div className='content'>
       <figure className='content__figure'>
