@@ -25,5 +25,4 @@ export const animalsImg = [
   {name: 'Alogator', src: 'https://i.pinimg.com/564x/8e/4d/82/8e4d82bdf2f82f9378a9217f79cb03b5.jpg' },
   {name: 'Ant', src: 'https://i.pinimg.com/564x/af/d3/86/afd38622ef03036bba764d18951f6932.jpg' },
   {name: 'parrot', src: 'https://i.pinimg.com/564x/72/c1/e4/72c1e4b2abfdc743ae7948e51515d7e2.jpg' },
-
 ];
