@@ -22,7 +22,11 @@ export const animalsImg = [
   {name: 'Tiger', src: 'https://i.pinimg.com/564x/78/85/9a/78859a54f029c4f214016e69e68c3fa7.jpg' },
   {name: 'Rhino', src: 'https://i.pinimg.com/564x/df/3a/7d/df3a7da0f8edea4692afe7c9f0df007a.jpg' },
   {name: 'Hippo', src: 'https://i.pinimg.com/564x/f5/02/7b/f5027bd076793f941988d0d59dfac108.jpg' },
-  {name: 'Alogator', src: 'https://i.pinimg.com/564x/8e/4d/82/8e4d82bdf2f82f9378a9217f79cb03b5.jpg' },
   {name: 'Ant', src: 'https://i.pinimg.com/564x/af/d3/86/afd38622ef03036bba764d18951f6932.jpg' },
   {name: 'parrot', src: 'https://i.pinimg.com/564x/72/c1/e4/72c1e4b2abfdc743ae7948e51515d7e2.jpg' },
+  {name: 'hedgehog', src: 'https://i.pinimg.com/564x/dc/e0/43/dce04373096485e8b53bc5695ef0b424.jpg' },
+  {name: 'squirrel', src: 'https://i.pinimg.com/564x/a8/0c/af/a80caf3c5acfabb63c0c5e80c01b3768.jpg' },
+  {name: 'owl', src: 'https://i.pinimg.com/564x/be/42/c1/be42c1f72fa7eaf104fa4d2ff8a2dd3e.jpg' },
+  {name: 'eagle', src: 'https://i.pinimg.com/564x/d0/23/d2/d023d206e5a7a257231fd2c79e00f8ad.jpg' },
+  {name: 'horse', src: 'https://i.pinimg.com/564x/b4/d1/99/b4d199a563fa2f320e7331420ea91ff4.jpg' },
 ];

@@ -16,14 +16,10 @@ function App() {
   const [cards, setCards] = useState<CardType[]>([]);
   const [selectedCard, setSelectedCard] = useState<CardType | null>(null);
   const [homeCard, setHomeCard] = useState<CardType | null>(helloObj);
-  const [prevLetter, setPrevLetter] = useState<CardType | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
 
   const handleNextCard = () => {
-    setPrevLetter(selectedCard);
-
-    
     setCurrentIndex(currentInx => {
       if (currentInx === cards.length - 1) {
         return 0;
@@ -37,8 +33,15 @@ function App() {
   }
 
   const handlePrevLetter = () => {
-    setSelectedCard(prevLetter);
+    setCurrentIndex(current => {
+      if (current <= 0) {
+        return 0; 
+      }
+  
+      return current - 1;
+    });
   }
+  
 
   useEffect(() => {
     setSelectedCard(cards[currentIndex]);
@@ -55,7 +58,7 @@ function App() {
 
     if (choosenGame === 'animals') {
       setSelectedCard(animalsImg[currentIndex]);
-      setCards([...animalsImg]);
+      setCards([...animalsImg.sort(card => Math.random() - 0.5)]);
       setHomeCard(null);
       setCurrentIndex(0);
     }
@@ -85,11 +88,12 @@ function App() {
 
 
 
-        <Stack className="bottomNav">
-          <Nav
-            setChoosenGame={setChoosenGame}
-          />
-        </Stack>
+      <Stack className="bottomNav" sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
+        <Nav
+          setChoosenGame={setChoosenGame}
+        />
+      </Stack>
+
       </Box>
   );
 }
