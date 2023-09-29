@@ -24,7 +24,7 @@ export const animalsImg = [
   {name: 'Hippo', src: 'https://i.pinimg.com/564x/f5/02/7b/f5027bd076793f941988d0d59dfac108.jpg' },
   {name: 'Ant', src: 'https://i.pinimg.com/564x/af/d3/86/afd38622ef03036bba764d18951f6932.jpg' },
   {name: 'parrot', src: 'https://i.pinimg.com/564x/72/c1/e4/72c1e4b2abfdc743ae7948e51515d7e2.jpg' },
-  {name: 'hedgehog', src: 'https://i.pinimg.com/564x/dc/e0/43/dce04373096485e8b53bc5695ef0b424.jpg' },
+  {name: 'hedgehog', src: 'https://i.pinimg.com/564x/c6/1a/1b/c61a1bd1a2d650a6e5996de48e06d17f.jpg' },
   {name: 'squirrel', src: 'https://i.pinimg.com/564x/a8/0c/af/a80caf3c5acfabb63c0c5e80c01b3768.jpg' },
   {name: 'owl', src: 'https://i.pinimg.com/564x/be/42/c1/be42c1f72fa7eaf104fa4d2ff8a2dd3e.jpg' },
   {name: 'eagle', src: 'https://i.pinimg.com/564x/d0/23/d2/d023d206e5a7a257231fd2c79e00f8ad.jpg' },

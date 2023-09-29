@@ -88,11 +88,11 @@ function App() {
 
 
 
-      <Stack className="bottomNav" sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
-        <Nav
-          setChoosenGame={setChoosenGame}
-        />
-      </Stack>
+        <Stack className="bottomNav" sx={{ position: 'fixed', bottom: '10%', left: 0, right: 0 }}>
+          <Nav
+            setChoosenGame={setChoosenGame}
+          />
+        </Stack>
 
       </Box>
   );
